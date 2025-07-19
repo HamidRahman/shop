@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Django migrations
+*/migrations/
+!*/migrations/__init__.py
+
+# SQLite database
+*.sqlite3
+
+# Django secret key file or local settings
+.env
+.env.*
+
+# Static & media files (you may want to keep them in production)
+staticfiles/
+media/
+static/
+
+# VS Code
+.vscode/
+.history/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+
+# Pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Pylint
+.pylint.d/
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
