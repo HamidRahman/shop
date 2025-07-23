@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # My Apps
     'cart.apps.CartConfig',
     'order.apps.OrderConfig',
+    'payment.apps.PaymentConfig',
     'shop.apps.ShopConfig',
     
 ]
@@ -136,3 +137,8 @@ CART_SESSION_ID = 'cart'
 
 #Email Settings
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+#STRIPE APIS KEYS
+STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_API_VERSION = '2025-06-30.basil' # 2025-06-30.basil

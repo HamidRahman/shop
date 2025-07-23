@@ -8,6 +8,8 @@ django = "*"
 pillow = "*"
 celery = "*"
 flower = "*"
+stripe = "*"
+python-decouple = "*"
 
 [dev-packages]
 
